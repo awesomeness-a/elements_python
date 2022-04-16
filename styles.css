@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Sentinel Book";
+    src: url("sentinel/sentinel-book.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Sentinel";
+    src: url("sentinel/sentinel-bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Sentinel";
+    src: url("sentinel/sentinel-semibold.woff") format('woff');
+    font-weight: semibold;
+}
+
+@font-face {
+    font-family: "Sentinel";
+    src: url("sentinel/sentinel-light.woff") format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Sentinel";
+    src: url("sentinel/sentinel-light-italic.woff") format('woff');
+    font-weight: 200;
+}
+
+html,
+body {
+    min-width: 290px;
+    color: #000000;
+    font-family: "Source Sans Pro"; 
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: #F1F1F1;
+    font-size: 1.1rem;
+    cursor: url('blue3.png'), auto;
+}
+
+header {
+    margin: 25px;
+    font-family: "Sentinel";
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#navbar {
+    position: fixed;
+    background-color: #E2EBF2;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid 1px;
+    border-color: #000000;
+}
+
+#created-link {
+    border-top: solid 1px;
+    border-color: #000000;
+    padding-top: 0px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#blue-link {
+    color: #1A8DC7;
+}
+
+#navbar ul {
+    height: 60%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#main-doc {
+    background-color: #F1F1F1;
+    position: absolute;
+    margin-left: 310px;
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 110px;
+    font-family: "Sentinel";
+}
+
+.main-section {
+    margin-bottom: 50px;
+}
+
+section article {
+    margin: 0px;
+}
+
+.with_python {
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-family: "Sentinel";
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.8rem;
+    background-color: #E2EBF2;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.inline-code {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.text-inline-code {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+#row-inline-code {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+#benefits {
+    margin-top: 20px;
+}
+
+#benefits h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#benefits p {
+    margin: 0;
+}
+
+#quote {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1;
+    font-style: italic;
+
+}
+
+#think-python {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#comment {
+    color: #999999;
+}
+
+#note {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#resources-link {
+    text-decoration: none;
+    color: #1A8DC7;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: collapse;
+    column-gap: 40px;
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+.table-wrap {
+    table-layout: fixed;
+    padding-top: 0px;
+    padding-bottom: 15px;
+} 
+/*
+tbody td {
+    width: 100%;
+    min-width: 4rem;
+    max-width: 4rem;
+}
+*/
+
+tr.data {
+    background-color: #D6D6D6;
+    border-spacing: 30 15px;
+}
+  
+tr.data th {
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    padding: 0.3rem 0.25rem 0;
+    text-align: left;
+    font-weight: 400;
+}
+
+tr.entries td {
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    font-size: 1rem;
+    line-height: 1;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones */
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #navbar {
+        background-color: #E2EBF2;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Elements of Programming<br><span class="with_python">with Python</span></header>
+            <ul>
+              <li><a class="nav-link" href="#intro">Introduction</a></li>
+              <li><a class="nav-link" href="#why_python">Why Python</a></li>
+              <li><a class="nav-link" href="#program">What is a program?</a></li>
+              <li><a class="nav-link" href="#var-expressions">Variables and Expressions</a></li>
+              <li><a class="nav-link" href="#data-types">Data types and Operators</a></li>
+              <li><a class="nav-link" href="#">Control Flow</a></li>
+              <li><a class="nav-link" href="#">Functions</a></li>
+              <li><a class="nav-link" href="#">Modules</a></li>
+              <li><a class="nav-link" href="#">Data structures</a></li>
+              <li><a class="nav-link" href="#">OOP</a></li>
+              <li><a class="nav-link" href="#files">I/O. Files</a></li>
+              <li><a class="nav-link" href="#exceptions">Exceptions</a></li>
+              <li><a class="nav-link" href="#">Scripting</a></li>
+              <li><a class="nav-link" href="#">Debugging</a></li>
+              <li><a class="nav-link" href="#">Fun part</a></li>
+            </ul>
+            <div id="created">
+                <a href="https://github.com/awesomeness-a" id="created-link"><p>Created by <span id="blue-link">alina a.</span></p></a>
+            </div>
+            
+          </nav>
+        
+        <main id="main-doc">
+            <section class="main-section" id="intro">
+                <header>Introduction</header>
+                <article>
+                    <blockquote id="python-quote" cite="https://greenteapress.com/thinkpython/html/thinkpython002.html"><span id="quote">The single most important skill for a computer scientist is problem solving. Problem solving means the ability to formulate problems, think creatively about solutions, and express a solution clearly and accurately. As it turns out, the process of learning to program is an excellent opportunity to practice problem-solving skills.</span><br>
+                    <span id="think-python">Think Python, Allen B. Downey</span></blockquote>
+                    <p>This website aims at giving its users basic concepts of programming with Python, one of the best programming languages for beginners. So if you are a newbie looking for a brief introduction to the exciting world of programming, I believe, you will benefit from going through the following.<br><br>Take your time, and most important, enjoy the process! 👾</p>
+                </article>  
+            </section>
+            
+            <section class="main-section" id="why_python">
+                <header>Why Python</header>
+                <article>
+                    <p>Python is a <em>general-purpose</em> programming language that can be used to build almost any kind of program that does not need direct access to the computer's hardware.</p>
+                    <div id="benefits">
+                        <h4>It's relatively easy to learn</h4>
+                        <p>Especially when compared to other widely used programming languages, the core Python language is remarkably easy to learn.</p>
+                    </div>
+                    
+                    <div id="benefits">
+                        <h4>It's relatively easy to use</h4>
+                        <p>Because it eliminates much of the complexity in other tools, Python programs are simpler, smaller, and more flexible than equivalent programs in other popular languages.</p>
+                    </div>
+                    
+                    <div id="benefits">
+                        <h4>It's mixable</h4>
+                        <p>Python is good at rapid prototyping—systems may be implemented in Python first, to leverage its speed of development, and later moved to other programming languages like C++ for delivery, one piece at a time, according to performance demands.</p>
+                    </div>
+                    
+                    <div id="benefits">
+                        <h4>It's powerful</h4>
+                        <p>Its toolset places it between traditional scripting languages (such as Tcl, Scheme, and Perl) and systems development languages (such as C, C++, and Java). Python provides all the simplicity and ease of use of a scripting language, along with more advanced software-engineering tools typically found in compiled languages.</p>
+                    </div>
+                   
+                    <p><strong>In addition</strong> to the above, Python <em>is really fun</em> to do programming with, and I hope you'll love it as much as I do!</p>
+                    <p id="note">To be able to follow the content of this website, you need to have Python 3+ installed on your computer. You can go through <a href="https://python.swaroopch.com/installation.html" id="resources-link">this article</a> on how to do that. Also, you need to have a text editor for working with your Python files (try VS Code, it's great and available <a href="https://code.visualstudio.com/download" id="resources-link">here</a> for free). </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="program">
+                <header>What is a program?</header>
+                <article>
+                    <p>A <strong>program</strong> is a sequence of instructions that specifies how to perform a computation.</p>
+                    <p>Basic instructions include:</p>
+                    <ul>
+                        <li><strong>input</strong>: get data from the keyboard, a file, or some other device;</li>
+                        <li><strong>output</strong>: display data on the screen or send data to a file or other device;</li>
+                        <li><strong>math</strong>: perform basic mathematical operations like addition and multiplication;</li>
+                        <li><strong>conditional execution</strong>: check for certain conditions and execute the appropriate code;</li>
+                        <li><strong>repetition</strong>: perform some action repeatedly and execute the appropriate code.</li>
+                    </ul>
+                    <p>Essentially, a program is a <em>sequence of definitions and commands</em>. Definitions are evaluated and commands are executed by Python interpreter in a shell.</p>
+                    <p>The <strong>Python interpreter</strong> is a program that reads and executes Python code. To start Python interpreter, type in a shell</p>
+                    <code>python3</code>
+                    <p>This command starts a Python interpreter where you can write Python expressions.
+                    <p>Traditionally, the first program you write is called <strong>"Hello, World!"</strong><br>It's simple and all it does is display the words "Hello, World!" In Python, it looks like this:</p>
+                    <code><span id="comment"># my first Python program</span>
+                        print('Hello, World!')</code>
+                    <p>This is an example of a <strong>print statement</strong> which simply displays a value on the screen.</p>
+                    <p>Statements instruct interpreter to do something. They can be typed directly in a shell or stored in a file that is read into the shell and evaluated.</p>
+                    <p># symbol indicates that any text to the right is a comment and should be ignored by the interpreter. Comments are useful as notes for the reader of the program.</p>
+                    <p>Congratulations, you just wrote you first Python program! How awesome is that?</p>
+                    <p id="note">If you're interested in learning about shell scripting (you should be), there's a number of good resources. Some free resources I recommend: Udacity <a href="https://www.udacity.com/course/shell-workshop--ud206" id="resources-link">Shell Workshop</a>, <a href="https://guide.bash.academy/" id="resources-link">The Bash Academy</a>, and <a href="https://www.amazon.com/Classic-Shell-Scripting-Arnold-Robbins/dp/0596005954" id="resources-link">Classic Shell Scripting</a> by Arnold Robbins.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="var-expressions">
+                <article>
+                    <header>Variables and Expressions</header>
+                    <p>One of the most powerful features of a programming language is the ability to manipulate variables. A <strong>variable</strong> is a name that refers to a value. A value is one of the basic things a program works with, like a letter "a" or a number 42.</p>
+                    <p><em>An assignment statement</em> creates a new variable and gives it a value.</p>
+                    <code>band_name = 'Black Sabbath'
+                      num = 42
+                      pi = 3.141592653589793
+                    </code>
+                    <p>To retrieve a value associated with a variable, you simply type its name.</p>
+                    <code>pi
+                    >>> 3.141592653589793
+                    </code>
+                    <p>The first example assigns a string to a new variable named <span class="text-inline-code">band_name</span>; the second gives the integer 42 to <span class="text-inline-code">num</span>; the third assigns the approximate value of π to <span class="text-inline-code">pi</span>.</p>
+                    <p>Some of the <strong>rules to follow</strong> when naming your variables:</p>
+                    <ul>
+                        <li>Try to give meaningful names to your variables, so that when you're back to your own code, you can understand what it is about.</li>
+                        <li>Variables can contain letters and numbers, but they can't begin with a number.</li> 
+                        <li>In Python, we use only lowercase for variables names.</li>
+                        <li>The underscore character _ can appear in a name for better code readability.</li>
+                    </ul>
+                    <p>Also, Python has <strong>keywords</strong> that can't be used as variable names. If you try to use them as variable names, you will get a syntax error.</p>
+                    <code>>>> class = 'Advanced Theoretical Zymurgy'
+                    SyntaxError: invalid syntax
+                    </code>
+                    <h4>Expressions and Statements</h4>
+                    <p>An <strong>expression</strong> is a combination of values, variables, and operators.</p>
+                    <p>A value all by itself is considered an expression, and so is a variable. These are all valid expressions:</p>
+                    <code>42
+                    n 
+                    n + 42
+                    </code>
+                    <p>A <strong>statement</strong> is a unit of code that the Python interpreter can execute. We have already seen two kinds of statements: print and assignment.</p>
+                    <p>The important difference between a statement and an expression is that an expression has a value and a statement does not.</p>
+                </article>  
+            </section>
+            
+            <section class="main-section" id="data-types">
+                <header>Data Types and Operators</header>
+                <article>
+                    <p>Programs manipulate data objects. Objects have a type that defines the kind of things programs can do with them.</p> 
+                    <p>To check the type of an object, use function <span class="text-inline-code">type()</span></p>
+                    <code>>>> num = 42
+                        >>> type(num)
+                    &lt;class 'int'&gt;
+                    </code>
+                    <p>In Python, data takes the form of objects—either built-in objects that Python provides, or objects we create using Python classes (we'll talk about that later).</p>
+                    <p>Python provides powerful object types as an istrinsic part of the language.</p>
+                    
+                    <div class="table-wrap">
+                        <h4>Python's Core Data Types</h4>
+                        <table>
+                          <tbody>
+                            <tr class="data">
+                              <th>Object type</th>
+                              <th>Example literals/creation</th>
+                            </tr>
+                            <tr class="entries">
+                                <td>Numbers</td>
+                                <td id="row-inline-code">1234, 3.1415, 3+4j, 0b111, Decimal()</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Strings</td>
+                                <td id="row-inline-code">'spam', "Bob's", b'a\x01c', u'sp\xc4m'</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Lists</td>
+                                <td id="row-inline-code">[1, [2, 'three'], 4.5], list(range(10))</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Dictionaries</td>
+                                <td id="row-inline-code">{'food': 'spam', 'taste': 'yum'}, dict(hours=10)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Tuples</td>
+                                <td id="row-inline-code">(1, 'spam', 4, 'U'), tuple('spam')</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Files</td>
+                                <td id="row-inline-code">open('eggs.txt'), open(r'C:\ham.bin', 'wb')</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Sets</td>
+                                <td id="row-inline-code">set('abc'), {'a', 'b', 'c'}</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Other core types</td>
+                                <td>Booleans, types, <span id="row-inline-code">None</span></td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Program unit types</td>
+                                <td>Functions, modules, classes</td>
+                            </tr>
+                            <tr class="entries">
+                                <td>Implementation-related types</td>
+                                <td>Compiled code, stack tracebacks</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <h4>Numbers</h4>
+                    <p>Python's core objects set includes <em>integers</em> that have no fractional part, <em>floating-point numbers</em> that do, <em>complex numbers</em> with imaginary parts, <em>decimals</em> with fixed precision, <em>rationals</em> with numerator and denominator, and full-featured <em>sets</em>.</p>
+                    <p>Numbers in Python support the normal mathematical operations. For example, addition and multiplication.</p>
+                    <code>>>> 42 + 42
+                        84
+                        >>> 1.5 * 4
+                        6.0
+                    </code>
+                    <h4>Operators and Operands</h4>
+                    <p><strong>Operators</strong> are special symbols that represent computations like addition and multiplication. The values the operator is applied to are called <strong>operands</strong>.</p>
+                    <p>In the example above, <span class="inline-code">42</span> and <span id class="inline-code">42</span> are operands and the sign <span class="inline-code">+</span> is an operator. Here's a quick overview of the available operators.</p>
+                    <div class="table-wrap">
+                        <table>
+                          <tbody>
+                            <tr class="data">
+                              <th>Operator</th>
+                              <th>Explanation</th>
+                              <th>Example</th>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">+</td>
+                                <td>Adds two objects.</td>
+                                <td id="row-inline-code">3+5, 'a' + 'b'</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">-</td>
+                                <td>Subtracts one number from another.</td>
+                                <td id="row-inline-code">50 - 24</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">*</td>
+                                <td>Miltiplies numbers.</td>
+                                <td id="row-inline-code">2 * 3</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">**</td>
+                                <td>Returns x to the power of y.</td>
+                                <td id="row-inline-code">3 ** 4</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">/</td>
+                                <td>Divides x by y.</td>
+                                <td id="row-inline-code">13 / 3</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">//</td>
+                                <td>Divides x by y and rounds the answer down to the nearest integer value. If one of the values is a float, you'll get back a float.</td>
+                                <td id="row-inline-code">13 // 3</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">%</td>
+                                <td>Modulo returns the remainder of the division.</td>
+                                <td id="row-inline-code">13 % 3</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code"><<</td>
+                                <td>Left shift. Shifts the bits of the number to the left by the number of bits specified.</td>
+                                <td id="row-inline-code">2 << 2 gives 8</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">>></td>
+                                <td>Right shift. Shifts the bits of the number to the right by the number of bits specified.</td>
+                                <td id="row-inline-code">11 >> 1 gives 5</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">&</td>
+                                <td>Bit-wise AND. If both bits are 1, the result is 1.</td>
+                                <td id="row-inline-code">if x == 5 & y == 6</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">|</td>
+                                <td>Bit-wise OR. If both bits are 0, the result is 0.</td>
+                                <td id="row-inline-code">if x OR y</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">^</td>
+                                <td>Bit-wise XOR. If both bits are the same, the result is 0.</td>
+                                <td id="row-inline-code">5 ^ 3</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code"><</td>
+                                <td>Less than.</td>
+                                <td id="row-inline-code">if x < 5</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">></td>
+                                <td>Greater than.</td>
+                                <td id="row-inline-code">if x > 0</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code"><=</td>
+                                <td>Less than or equal to.</td>
+                                <td id="row-inline-code">if x <= 9</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">>=</td>
+                                <td>Greater than or equal to.</td>
+                                <td id="row-inline-code">if x >= 45</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">==</td>
+                                <td>Equal to</td>
+                                <td id="row-inline-code">if x == 4</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">!=</td>
+                                <td>Not equal to</td>
+                                <td id="row-inline-code">if x != 7</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">not</td>
+                                <td>Boolean NOT.</td>
+                                <td id="row-inline-code">x = True; not x # returns False</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">and</td>
+                                <td>Boolean AND.</td>
+                                <td id="row-inline-code">x = False; y = True; x and y # returns False</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">or</td>
+                                <td>Boolean OR.</td>
+                                <td id="row-inline-code">x = True; y = False; x or y # returns True</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                    </div>
+                    <p>It's common to run a math operation on a variable and then assign the result of the operation back to the variable, hence there is a shortcut for such expressions:</p>
+                    <code>a = 2
+                        a = a * 3
+                    </code>
+                    <p>can be written as</p>
+                    <code>a = 2
+                        a *= 3
+                    </code>
+                    <h4>Order of Operations</h4>
+                    <p>When more than one operator appears in an expression, the order of evaluation depends on the rules of precedence. For mathematical operators, Python follows mathematical convention. The acronym PEMDAS is a useful way to remember the rules:</p>
+                    <ul>
+                        <li><strong>P</strong>arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.</li>
+                        <li><strong>E</strong>xponentiation has the next highest precedence.</li>
+                        <li><strong>M</strong>ultiplication and <strong>D</strong>ivision have the same precedence, which is higher than <strong>A</strong>ddition and <strong>S</strong>ubtraction, which also have the same precedence.</li>
+                    </ul>
+                    <p>Operators with the same precedence are evaluated from left to right (except exponentiation).</p>
+                    <p>To make the expressions more readable, it's better to use parentheses:<br><span class="inline-code">2 + (3 * 4)</span> is easier to read than <span class="inline-code"> 2 + 3 * 4.</span></p>
+                    <h4>Strings</h4>
+                    <p>A string is a sequence of case-sensitive characters. Strings are basically just a bunch of words.</p>
+                    <p>You can specify strings using single quotes</p>
+                    <code><span id="comment"># A single-quoted string assigned to a variable named pb</span>
+                        pb = 'Peanut butter is the glue that holds my life together.'</code>
+                    <p>or double quotes</p>
+                    <code><span id="comment"># A double-quoted string assigned to a variable hold_on</span>
+                    hold_on = "Hold on, let me overthink this."</code>
+                    <p>To specify a multi-line string, use triple quotes (either single or double)</p>
+                    <code><span id="comment"># A multi-line string assigned to a variable three_lines</span>
+                    three_lines = '''This is the first line of a multi-line string.
+                    This is the second line.
+                    And finally, the third.
+                    '''
+                    </code>
+                    <p>Strings are <strong>immutable objects</strong>. An immutable object is an object whose state cannot be modified after it is created.</p>
+                    <p>Every object in Python is classified as either immutable or not. In terms of the core types, <em>numbers</em>, <em>strings</em>, and <em>tuples</em> are immutable; <em>lists</em>, <em>dictionaries</em>, and <em>sets</em> are not—they can be changed in place freely, as can most objects you'll code with classes.</p>
+                    <p>Sometimes we want to construct strings from other information. This is where the <span class="inline-code">format()</span> method is useful.</p>
+                    <code>year = 1936
+                        name = 'Alan Turing'
+                        print('In {0}, {1} published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."'.format(year, name))
+                    </code>
+                    <p>Output:</p>
+                    <code>In 1936, Alan Turing published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."</code>
+                    <p><span class="inline-code">{0}</span> corresponds to the variable <span class="inline-code">year</span> which is the first argument to the format method, and <span class="inline-code">{1}</span> corresponds to the variable <span class="inline-code"> name</span> which is the second argument.</p>
+                    <p>Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.</p>
+                    <p>We can achieve the same result using string concatenation.</p>
+                    <code>'In ' + str(year) + ', ' + name + ' published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."'</code>
+                    <p>We can also name the parameters to the format method instead of indexing them:</p>
+                    <code>print('In {year}, {name} published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."'.format(year, name))</code>
+                    <p>There is a shorter way to do named parameters, called <strong>"f-strings"</strong>:</p>
+                    <code>
+                        print(f'In {year}, {name} published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."')
+                    </code>
+                    <p>Let's say you have a quote within your string. If you try to type ' character within your single-quoted string, Python will get confused and give you <span class="inline-code">SyntaxError</span>.</p>
+                    <p>To prevent this from happening, you need to use an escape character. <strong>Escape characters</strong> invoke an alternative interpretation on the following characters in a character sequence. In this particular case, we use a backslash character:</p>
+                    <code>print('How\'s life?')</code>
+                    <p>Another way to avoid <span class="inline-code">SyntaxError</span> is by using double quotes instead of single quotes.</p>
+                    <code>print("How's life?")</code>
+                    <p>There are a few more escape characters you should know, so go ahead, google about them.</p>
+                    <p>We can check string's length with a built-in <span class="inline-code">len</span> function</p>
+                    <code>>>> name = 'Angela'
+                        >>> len(name)
+                        6
+                    </code>
+                    <p>To fetch string's components, use indexing expressions</p>
+                    <code>>>> name[0]
+                        'A'
+                    </code>
+                    <p>In addition to simple positional indexing, sequences also support <strong>slicing</strong>, which is a nice way to extract a slice in a single step.</p>
+                    <code>>>> city = 'London'
+                        >>> city[2:4]
+                        'nd'
+                    </code>
+                    <p>The general form of slicing, x[i : j] means "give me everything in x starting from i and up to but not including j."</p>
+                    <p>Some common usage variations:</p>
+                    <code>>>> city[1:] <span id="comment"># Everything past the first</span>
+                        'ondon'
+                        >>> city[:3] <span id="comment"># Same as city[0:3]</span>
+                            'Lon'
+                        >>> city[:-1] <span id="comment"># Everything but the last, same as [0:-1]</span>
+                    'Londo'
+                    >>> city[:] <span id="comment"> All of city as a top-lever copy, same as city[0:len(city)]</span>
+                    'London'
+                </code>
+                
+                </article>
+            </section>
+            
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <section class="main-section">
+                <header></header>
+            </section>
+            <!----------------
+            <section class="main-section" id="exceptions">
+                <header>Exceptions</header>
+                <p>When procedure execution hits an unexpected condition, we get error types—they're <strong>exceptions</strong>.</p>
+                <p>Python code provides handles for exceptions.</p>
+                <code>try:
+                    &emsp;&emsp;...
+                    except:
+                    &emsp;&emsp;...
+                </code>
+                <p>Exceptions raised by any statement in body of <span class="inline-code">try</span> are handled by the <span class="inline-code">except</span> statement and execution continues with the body of the <span class="inline-code">except</span> statement.</p>
+                <p>To handle specific exceptions:</p>
+                <code>try:
+                    &emsp;&emsp;print(num)
+                    except ValueError:
+                    &emsp;&emsp;print("Please, insert a number.")
+                </code>
+                <p>Common exceptions include:</p>
+                <ul>
+                    <li>SyntaxError</li>
+                    <li>NameError</li>
+                    <li>AttributeError</li>
+                    <li>TypeError</li>
+                    <li>ValueError</li>
+                    <li>IOError</li>
+                </ul>
+            </section>
+            
+            <section class="main-section" id="files">
+                <header>I/O. Files</header>
+                <article>
+                    <h4>Files</h4>
+                    <p>A text file can be thought of as a seqence of lines.</p>
+                    <p>Before we can read the contens of the file, we must tell Python which file we are going to work with and what we will be doing with the file. This is done with the <span class="inline-code">open()</span> function.</p>
+                    <p><span class="inline-code">open()</span> returns a file handle—a varibale used to perform operations on the file.</p>
+                    <code>fhand = open('mbox.txt', 'r')
+                    </code>
+                    <p>Mode is optional and should be <span class="inline-code">'r'</span>if we're planning to read the file and <span class="inline-code">'w'</span> if we're going to write to the file.</p>
+                    <p>A file handle open for read can be treated as a sequence of strings where each line in the file in]s a string in the sequence. </p>
+                </article>
+            </section>
+            ----->
+        </main>
+    </body>
+</html>
