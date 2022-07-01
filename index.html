@@ -16,15 +16,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <nav id="navbar">
-            <header>Elements of Programming<br><span class="with_python">with Python</span></header>
-            <ul>
+        <nav id="navbar" class="burger-menu">
+            <header id="header-main">Elements of Programming<br><span class="with_python">with Python</span></header>
+            <ul id="burger-list">
               <li><a class="nav-link" href="#intro">Introduction</a></li>
-              <li><a class="nav-link" href="#why_python">Why Python</a></li>
+              <li><a class="nav-link" href="#why_python">Why Python?</a></li>
               <li><a class="nav-link" href="#program">What is a program?</a></li>
               <li><a class="nav-link" href="#var-expressions">Variables and Expressions</a></li>
               <li><a class="nav-link" href="#data-types">Data types and Operators</a></li>
-              <li><a class="nav-link" href="#">Control Flow</a></li>
+              <li><a class="nav-link" href="#control-flow">Control Flow</a></li>
               <li><a class="nav-link" href="#">Functions</a></li>
               <li><a class="nav-link" href="#">Modules</a></li>
               <li><a class="nav-link" href="#">Data structures</a></li>
@@ -36,23 +36,23 @@
               <li><a class="nav-link" href="#">Fun part</a></li>
             </ul>
             <div id="created">
-                <a href="https://github.com/awesomeness-a" id="created-link"><p>Created by <span id="blue-link">alina a.</span></p></a>
+                <a href="https://github.com/homotechno" id="created-link"><p>Created by <span id="blue-link">alina a.</span></p></a>
             </div>
-            
           </nav>
-        
+        <!--------------------------Introduction-------------------------->
         <main id="main-doc">
             <section class="main-section" id="intro">
                 <header>Introduction</header>
                 <article>
                     <blockquote id="python-quote" cite="https://greenteapress.com/thinkpython/html/thinkpython002.html"><span id="quote">The single most important skill for a computer scientist is problem solving. Problem solving means the ability to formulate problems, think creatively about solutions, and express a solution clearly and accurately. As it turns out, the process of learning to program is an excellent opportunity to practice problem-solving skills.</span><br>
                     <span id="think-python">Think Python, Allen B. Downey</span></blockquote>
-                    <p>This website aims at giving its users basic concepts of programming with Python, one of the best programming languages for beginners. So if you are a newbie looking for a brief introduction to the exciting world of programming, I believe, you will benefit from going through the following.<br><br>Take your time, and most important, enjoy the process! 👾</p>
+                    <p>This website aims at giving its users basic concepts of programming with Python, one of the best programming languages for beginners. So if you are a newbie looking for an introduction to the exciting world of programming, I believe, you will benefit from going through the following.<br><br>Take your time, and most important, enjoy the process! 👾</p>
                 </article>  
             </section>
             
+            <!--------------------- Why Python?--------------------------->
             <section class="main-section" id="why_python">
-                <header>Why Python</header>
+                <header>Why Python?</header>
                 <article>
                     <p>Python is a <em>general-purpose</em> programming language that can be used to build almost any kind of program that does not need direct access to the computer's hardware.</p>
                     <div id="benefits">
@@ -80,6 +80,7 @@
                 </article>
             </section>
 
+            <!---------------------What is a program?--------------------->
             <section class="main-section" id="program">
                 <header>What is a program?</header>
                 <article>
@@ -107,6 +108,7 @@
                 </article>
             </section>
 
+            <!--------------------Variables and Expressions--------------->
             <section class="main-section" id="var-expressions">
                 <article>
                     <header>Variables and Expressions</header>
@@ -140,14 +142,14 @@
                     n + 42
                     </code>
                     <p>A <strong>statement</strong> is a unit of code that the Python interpreter can execute. We have already seen two kinds of statements: print and assignment.</p>
-                    <p>The important difference between a statement and an expression is that an expression has a value and a statement does not.</p>
+                    <p>The important difference between a statement and an expression is that <em>an expression has a value and a statement does not.</em></p>
                 </article>  
             </section>
-            
+            <!------------------Data Types and Operators------------------>
             <section class="main-section" id="data-types">
                 <header>Data Types and Operators</header>
                 <article>
-                    <p>Programs manipulate data objects. Objects have a type that defines the kind of things programs can do with them.</p> 
+                    <p>Programs manipulate data objects.<em> Everything is an object in a Python script.</em> Objects have a type that defines the kind of things programs can do with them.</p> 
                     <p>To check the type of an object, use function <span class="text-inline-code">type()</span></p>
                     <code>>>> num = 42
                         >>> type(num)
@@ -207,14 +209,21 @@
                           </tbody>
                         </table>
                     </div>
+                    <!----------------------Numbers-------------------->
                     <h4>Numbers</h4>
                     <p>Python's core objects set includes <em>integers</em> that have no fractional part, <em>floating-point numbers</em> that do, <em>complex numbers</em> with imaginary parts, <em>decimals</em> with fixed precision, <em>rationals</em> with numerator and denominator, and full-featured <em>sets</em>.</p>
-                    <p>Numbers in Python support the normal mathematical operations. For example, addition and multiplication.</p>
-                    <code>>>> 42 + 42
+                    <p>Numbers in Python support the normal mathematical operations.</p>
+                    <code><span id="comment"># Addition</span>
+                        >>> 42 + 42
                         84
+                        <span id="comment"># Multiplication</span>
                         >>> 1.5 * 4
                         6.0
+                        <span id="comment"># Floor division</span>
+                        >>> 49 // 7 
+                        7
                     </code>
+                    <!------------Operators and Operands----------------->
                     <h4>Operators and Operands</h4>
                     <p><strong>Operators</strong> are special symbols that represent computations like addition and multiplication. The values the operator is applied to are called <strong>operands</strong>.</p>
                     <p>In the example above, <span class="inline-code">42</span> and <span id class="inline-code">42</span> are operands and the sign <span class="inline-code">+</span> is an operator. Here's a quick overview of the available operators.</p>
@@ -343,6 +352,7 @@
                     <code>a = 2
                         a *= 3
                     </code>
+                    <!-------------Order of Operations--------------->
                     <h4>Order of Operations</h4>
                     <p>When more than one operator appears in an expression, the order of evaluation depends on the rules of precedence. For mathematical operators, Python follows mathematical convention. The acronym PEMDAS is a useful way to remember the rules:</p>
                     <ul>
@@ -352,8 +362,9 @@
                     </ul>
                     <p>Operators with the same precedence are evaluated from left to right (except exponentiation).</p>
                     <p>To make the expressions more readable, it's better to use parentheses:<br><span class="inline-code">2 + (3 * 4)</span> is easier to read than <span class="inline-code"> 2 + 3 * 4.</span></p>
+                    <!-------------------Strings------------------------>
                     <h4>Strings</h4>
-                    <p>A string is a sequence of case-sensitive characters. Strings are basically just a bunch of words.</p>
+                    <p>A string is an <em>ordered</em> sequence of case-sensitive characters. Strings are basically just a bunch of words.</p>
                     <p>You can specify strings using single quotes</p>
                     <code><span id="comment"># A single-quoted string assigned to a variable named pb</span>
                         pb = 'Peanut butter is the glue that holds my life together.'</code>
@@ -367,7 +378,8 @@
                     And finally, the third.
                     '''
                     </code>
-                    <p>Strings are <strong>immutable objects</strong>. An immutable object is an object whose state cannot be modified after it is created.</p>
+                    <p>Triple-quoted strings are usually used for <strong>docstrings</strong>. Docstrings are taken as comments when they appear at specific points in your file.</p>
+                    <p>Strings are <strong>immutable objects</strong>. An immutable object is an object whose state cannot be modified after it is created. It means you can't change its value in place; instead, you must run code to make a new object containing the new value.</p>
                     <p>Every object in Python is classified as either immutable or not. In terms of the core types, <em>numbers</em>, <em>strings</em>, and <em>tuples</em> are immutable; <em>lists</em>, <em>dictionaries</em>, and <em>sets</em> are not—they can be changed in place freely, as can most objects you'll code with classes.</p>
                     <p>Sometimes we want to construct strings from other information. This is where the <span class="inline-code">format()</span> method is useful.</p>
                     <code>year = 1936
@@ -382,12 +394,12 @@
                     <code>'In ' + str(year) + ', ' + name + ' published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."'</code>
                     <p>We can also name the parameters to the format method instead of indexing them:</p>
                     <code>print('In {year}, {name} published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."'.format(year, name))</code>
-                    <p>There is a shorter way to do named parameters, called <strong>"f-strings"</strong>:</p>
-                    <code>
-                        print(f'In {year}, {name} published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."')
+                    <p>There is a shorter way to do named parameters, called <strong>"f-strings"</strong>, which is a more elegant and readable way to format a string:</p>
+                    <code>print(f'In {year}, {name} published one of the most influential math papers in history, in which he introduced the idea of a "Universal Machine."')
                     </code>
+                    <p><strong>Escape characters</strong></p>
                     <p>Let's say you have a quote within your string. If you try to type ' character within your single-quoted string, Python will get confused and give you <span class="inline-code">SyntaxError</span>.</p>
-                    <p>To prevent this from happening, you need to use an escape character. <strong>Escape characters</strong> invoke an alternative interpretation on the following characters in a character sequence. In this particular case, we use a backslash character:</p>
+                    <p>To prevent this from happening, you need to use an <strong>escape character</strong>. Escape characters invoke an alternative interpretation on the following characters in a character sequence. In this particular case, we use a backslash character:</p>
                     <code>print('How\'s life?')</code>
                     <p>Another way to avoid <span class="inline-code">SyntaxError</span> is by using double quotes instead of single quotes.</p>
                     <code>print("How's life?")</code>
@@ -414,15 +426,399 @@
                             'Lon'
                         >>> city[:-1] <span id="comment"># Everything but the last, same as [0:-1]</span>
                     'Londo'
-                    >>> city[:] <span id="comment"> All of city as a top-lever copy, same as city[0:len(city)]</span>
+                    >>> city[:] <span id="comment"> All of city as a top-level copy, same as city[0:len(city)]</span>
                     'London'
                 </code>
-                
+                <!--------------------Lists-------------------->
+                <h4>Lists</h4>
+                <p>Lists are <em>ordered</em> collections of arbitrary objects. They can contain any sort of objects and can be changed in place—they are <em>mutable</em> objects, and can respond to all the sequence operations used with strings, such as indexing, slicing, and concatenation.</p>
+                <p>We create a list using square brackets.</p>
+                <code>new_list = [1, 'apple', 42, 'answer', ['nested', 'list', 'of', 'strings']]
+                empty_list = []
+                </code>
+                <p>We access list's items by position using the bracket operator. Remember that the indices start at 0</p>
+                <code>>>> new_list[0]
+                    1
+                </code>
+                <p>Because they are sequences, lists support many of the same operations as strings. But, unlike strings, lists are mutable.</p>
+                <code><span id="comment"># Concatenation</span>
+                    >>> num_1 = [1, 2, 3]
+                    >>> num_2 = [4, 5, 6]
+                    >>> num_joined = num_1 + num_2
+                    >>> num_joined
+                    [1, 2, 3, 4, 5, 6]
+                </code>
+                <code><span id="comment"># Repetition</span>
+                    >>> [0] * 4
+                    [0, 0, 0, 0]
+                </code>
+                <code><span id="comment"># Slicing</span>
+                    >>> prices = [45, 87, 94, 67, 89, 100]
+                    >>> new_prices = prices[2:]
+                    >>> new_prices
+                    [94, 67, 89, 100]
+                </code>
+                <p><strong>List Methods</strong></p>
+                <p><span class="inline-code">append() </span>adds a new element to the end of a list</p>
+                <code>>>> fruits = ['apple', 'orange', 'banana']
+                    >>> fruits.append('dragon fruit')
+                    >>> fruits
+                    ['apple', 'orange', 'banana', 'dragon fruit']
+                </code>
+                <p><span class="inline-code">extend() </span>takes a list as an argument and append all of the elements</p>
+                <code>>>> veggies = ['carrot', 'potato', 'broccoli']
+                    >>> groceries = ['chicken', 'coconut milk', 'curry sauce']
+                    >>> groceries.extend(veggies)
+                    ['chicken', 'coconut milk', 'curry sauce', 'carrot', 'potato', 'broccoli']
+                </code>
+                <p><span class="inline-code">sort()</span> arranges the elements of the list from low to high</p>
+                <code>>>> a = [100, 67, -2, 9, 0]
+                    >>> a.sort()
+                    >>> print(a)
+                    [-2, 0, 9, 67, 100]
+                </code>
+                <p><strong>List comprehensions</strong> are a special way to build a new list by applying an expression to each item in a sequence.</p>
+                <code>>>> num = [2, 4, 6, 8]
+                    >>> squares = [n ** 2 for n in num]
+                    >>> squares
+                    [4, 16, 36, 64]
+                </code>
+                <!--------------Dictionaries--------------->
+                <h4>Dictionaries</h4>
+                <p>Dictionaries are <em>unordered</em> collections of <span class="inline-code">key:value</span> pairs. 
+                <ul>
+                    <li>They are of the category "mutable mapping."</li>
+                    <li>They are <em>objects that map keys to values.</em></li>
+                    <li>Dictionaries can contain objects of any type, and they support nesting to any depth.</li>
+                    <li>Keys can be any immutable objects.</li>
+                    <li>Sequence operations don't work with dictionaries, because dictionaries are mappings and have no notion of ordering among their items.</li>
+                </ul>  
+                </p>
+                <p>We can create a dictionary using several ways.</p>
+                <code><span id="comment"># Using curly brackets</span>
+                >>> fruits = {'apples': 3.40, 'bananas': 2.45, 'oranges': 4.0, 'pineapples': 10.5}
+                >>> fruits
+                {'apples': 3.40, 'bananas': 2.45, 'oranges': 4.0, 'pineapples': 10.5}
+                </code>
+                <code><span id="comment"># Using dict()</span>
+                >>> fruits = dict(apples = 3.40, bananas = 2.45, oranges = 4.0, pineapples = 10.5)
+                >>> fruits
+                {'apples': 3.40, 'bananas': 2.45, 'oranges': 4.0, 'pineapples': 10.5}
+                </code>
+                <code><span id="comment"># Using lists and zip()</span>
+                >>> fruits = ['apples', 'bananas', 'oranges', 'pineapples']
+                >>> prices = [3.40, 2.45, 4.0, 10.5]
+                >>> groceries = dict(zip(fruits, prices))
+                >>> groceries
+                {'apples': 3.40, 'bananas': 2.45, 'oranges': 4.0, 'pineapples': 10.5}
+                </code>
+                <p>In dictionaries, items are stored and fetched by key, instead of positional offset. To fetch a value, you supply the key with which it is associated, not its relative position.</p>
+                <code>>>> groceries = {'apples': 3.40, 'bananas': 2.45, 'oranges': 4.0, 'pineapples': 10.5}
+                    >>> groceries['apples']
+                    3.40
+                </code>
+                <p><span class="inline-code">in</span> allows you to test for key existence, and the <span class="inline-code">.keys()</span> method returns all the keys in the dictionary.</p>
+                <code>>>> 'peaches' in groceries
+                    False
+                </code>
+                <code>>>> list(groceries.keys())
+                ['oranges', 'apples', 'bananas', 'pineapples']</code>
+                <p>Dictionaries are <em>mutable</em>, so you can change, expand, and shrink them in place without making new dictionaries: simply assign a value to a key to change or create an entry.</p>
+                <code>>>> groceries['peaches'] = 6.30
+                    >>> groceries
+                    {'apples': 3.40, 'peaches': 6.30, 'bananas': 2.45, 'oranges': 4.0, 'pineapples': 10.5}
+                </code>
+                <p>Other common dictionary methods:</p>
+                <ul>
+                    <li><span class="inline-code">.items()</span> returns (key, value) pair tuples</li>
+                    <li><span class="inline-code">.values()</span> returns all the dictionary's values.</li>
+                    <li><span class="inline-code">.get()</span> returns <span class="inline-code">None</span> if key doesn't exist in a dictionary</li>
+                    <li><span class="inline-code">.pop()</span> deletes a key from a dictionary and returns the value it had.</li>
+                    <li><span class="inline-code">.update()</span> merges the keys and values of one dictionary into another, overwriting values of the same key if there's a clash</li>
+                </ul>
+                <code>>>> ingredients = {'eggs': 3, 'spam': 2, 'ham': 1}
+                    >>> extra = {'toast': 4, 'muffin': 5}
+                    >>> ingredients.update(extra)
+                    >>> ingredients
+                    {'muffin': 5, 'eggs': 3, 'toast': 4, 'spam': 2, 'ham': 1}
+                </code>
+                <p>Dictionaries can also be created with dictionary comprehensions.</p>
+                <code>>>> d = {k: v for (k, v) in zip(['a', 'b', 'c'], [1, 2, 3])}
+                    >>> d 
+                    {'b': 2, 'c': 3, 'a': 1}
+                </code>
+                <h4>Tuples</h4>
+                <p>Tuples work exactly like lists, except that they can't be changed in place (they are immutable) and are usually written as a series of items in paretheses, not square brackets.</p>
+                <ul>
+                    <li>They are ordered collections of arbitrary objects.</li>
+                    <li>They are accessed by offset.</li>
+                    <li>They are immutable sequences.</li>
+                    <li>You cannot change the size of a tuple without making a copy.</li>
+                    <li>Tuples store access points to other objects (references), and indexing a tuple is relatively quick.</li>
+                </ul>
+                <p>A tuple is written as a series of objects, separated by commas and normally enclosed in parentheses.</p>
+                <code>>>> prices = (45, 32, 4, 98, 76)
+                    >>> empty_tuple = ()
+                    >>> single_item_tuple = (42,)
+                </code>
+                <code><span id="comment"># Tuples concatenation</span>
+                    >>> (1, 2) + (3, 4)
+                   (1, 2, 3, 4)
+                </code>
+                <p>The immutability of tuples provides some integrity—you can be sure a tuple won't be changed through another reference elsewhere in a program.</p>
+                <p>Also, tuples can be used in places where lists cannot—for example, as dictionary keys.</p>
+                <h4>Sets</h4>
+                <p>A set is an <em>unordered</em> collection of unique and <em>immutable</em> objects that supports operations corresponding to mathematical set theory.</p>
+                <ul>
+                    <li>An item appears only once in a set, no matter how many times it is added.</li>
+                    <li>Sets are iterable, can grow and shrink on demand.</li>
+                    <li>They may contain a variety of object types</li>
+                    <li>Because they are unordered and do not map keys to values, sets are neither sequence nor mapping types.</li>
+                    <li>Sets can contain only immutable object types. Lists and dictionaries cannot be embedded in sets, but tuples can if you need to store compound values.</li>
+                </ul>
+                <p>We can create a set using the following:</p>
+                <code>>>> set([41, 24, 43, 42])
+                    {41, 24, 43, 42}</code>
+                <code>>>> {41, 24, 43, 42}
+                    {41, 24, 43, 42}</code>
+                <code>>>> set('apple')
+                    {'a', 'e', 'l', 'p'}
+                </code>
+                <p>Sets support operations corresponding to mathematical set theory.</p>
+                <code><span id="comment"># Intersection</span>
+                    >>> num = {7, 8, 9}
+                    >>> num & {7, 10, 9}
+                    {7, 9}
+                </code>
+                <code><span id="comment"># Union</span>
+                    >>> {1, 5, 3, 6} | num
+                    {1, 3, 5, 6, 7, 8, 9}
+                </code>
+                <code><span id="comment"># Difference</span>
+                    >>> num - {8, 9}
+                    {7}
+                </code>
+                <code><span id="comment"># Superset</span>
+                    >>> num > {7, 8}
+                    True
+                </code>
+                <p>Because items are stored only once in a set, sets can be used to <em>filter duplicates</em> out of other collections, though items may be reordered in the process because sets are unordered in general. Simply convert the collection to a set, and then convert it back again.</p>
+                <code>>>> num = [61, 24, 43, 88, 24, 88, 100]
+                    >>> set(num)
+                    {24, 43, 61, 88, 100}
+                    >>> num = list(set(num))
+                    >>> num
+                    [100, 43, 24, 88, 61]
+                </code>
+                <p>Sets can be used to isolate differences in lists, strings, and other iterable objects.</p>
+                <code>>>> set([12, 21, 73, 50, 7]) - set([1, 12, 4, 50, 6])
+                    {7, 21, 73}
+                </code>
+                <p>Sets are convenient when you're dealing with large data sets—the intersection of two sets contains objects common to both categories, and the union contains all items in either set.</p>
+                <code>>>> bands = {'black sabbath', 'ac/dc', 'thin lizzy', 'jimmy hendrix'}
+                    >>> great_guitarists = {'jimmy hendrix', 'eric clapton'}<br>
+                    >>> 'jimmy hendrix' in bands
+                    True
+                    >>> 'eric clapton' in bands
+                    False<br>
+                    <span id="comment"># Who is in both?</span>
+                    >>> bands & great_guitarists
+                    {'jimmy hendrix'}<br>
+                    <span id="comment"># All performers in either category</span>
+                    >>> bands | great_guitarists
+                    {'ac/dc', 'black sabbath', 'eric clapton', 'jimmy hendrix', 'thin lizzy'}<br>
+                    <span id="comment"># Performers who are not in the great_guitarists collection</span>
+                    >>> bands - great_guitarists
+                    {'ac/dc', 'black sabbath', 'thin lizzy'}<br>
+                    <span id="comment"># Great guitarists who are not in bands</span>
+                    >>> great_guitarists - bands
+                    {'eric clapton'}<br>
+                    <span id="comment"># Are all great guitarists in bands?</span>
+                    >>> bands > great_guitarists
+                    False<br>
+                    <span id="comment"># Who is in one but not both?</span>
+                    >>> bands ^ great_guitarists
+                    {'ac/dc', 'black sabbath', 'eric clapton', 'thin lizzy'}<br>
+                    <span id="comment"># Intersection</span>
+                    >>> (great_guitarists | bands) - (great_guitarists ^ bands)
+                    {'jimmy hendrix'}
+                </code>
+                <h4>Files</h4>
+                <p>File objects are considered a core type because they are created by a built-in function, but they’re not numbers, sequences, or mappings, and they don’t respond to expression operators; they export only methods for common file-processing tasks.</p>
+                <p>The built-in <span class="inline-code">open()</span> function creates a Python file object, which serves as a link to a file residing on your machine.</p>
+                <code><span id="comment"># 'w' means open a file in a write mode</span>
+                    >>> customers = open(r'C:\customers', 'w')</code>
+                    <p>If the file already exists, opening it in write mode clears out the old data and starts fresh. If the file doesn't exist, a new one is created.</p>
+                    <p>Once you make a file object with <span class="inline-code">open()</span>, you can call its methods to read from or write to the associated external file.</p>
+                    <p>File text takes the form of strings in Python programs; reading a file returns its content in strings, and content is passed to the write methods as strings.</p>
+                    <div class="table-wrap">
+                        <p><strong>Common File Operations</strong></p>
+                        <table>
+                          <tbody>
+                            <tr class="data">
+                              <th>Operation</th>
+                              <th>Interpretation</th>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">output = open(r'C:\file', 'w')</td>
+                                <td>Create output file (<span class="inline-code">'w'</span> means write)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">input = open('data', 'r')</td>
+                                <td>Create input file(<span class="inline-code">'r'</span> means read)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">input = open('data')</td>
+                                <td>Same as prior line (<span class="inline-code">'r'</span> is default)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">aString = input.read()</td>
+                                <td>Read entire file into a single string</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">aString = input.read(N)</td>
+                                <td>Read up to next <span class="inline-code">N</span> characters (or bytes) into a string</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">aString = input.readline()</td>
+                                <td>Read next line (including <span class="inline-code">\n</span> newline) into a string</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">alist = input.readlines()</td>
+                                <td>Read entire file into list of line strings (with <span class="inline-code">\n</span>)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">output.write(aString)</td>
+                                <td>Write a string of characters (or bytes) into file</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">output.writelines(aList)</td>
+                                <td>Write all line strings in a list into file</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">output.close()</td>
+                                <td>Manual close (done for you when file is collected)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">output.flush()</td>
+                                <td>Flush output buffer to disk without closing</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">anyFile.seek(N)</td>
+                                <td>Change file position to offset <span class="inline-code">N</span> for next operation</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">for line in open('data'): <em>use line</em></td>
+                                <td>File iterators read line by line</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">open('f.txt', encoding='latin-1')</td>
+                                <td>Python 3.X Unicode text files (<span class="inline-code">str</span> strings)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">open('f.bin', 'rb')</td>
+                                <td>Python 3.X bytes files (<span class="inline-code">bytes</span> strings)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">codecs.open('f.txt', encoding='utf8')</td>
+                                <td>Python 2.X Unicode text files (<span class="inline-code">unicode</span> strings)</td>
+                            </tr>
+                            <tr class="entries">
+                                <td id="row-inline-code">open('f.bin', 'rb')</td>
+                                <td>Python 2.X bytes files (<span class="inline-code">str</span> strings)</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+
+                    <code><span id="comment"># Read all at once into string</span>
+                        >>> open('myfile.txt').read()
+                        'hello text file\ngoodbye text file\n'
+                    </code>
+                    <code><span id="comment"># User-friendly display</span>
+                        >>> print(open('myfile.txt').read())
+                        hello text file<br>goodbye text file
+                    </code>
+                    <code><span id="comment"># Scan a text file line by line</span>
+                        >>> for line in open('myfile.txt'):
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(line, end='')
+                        hello text file
+                        goodbye text file
+                    </code>
+                    <p>When coded this way, the temporary file object created by <span class="inline-code">open</span> will automatically read and return one line on each loop iteration.</p>
+                    <p><strong>pickle</strong></p>
+                    <p>The <span class="inline-code">pickle</span> module is an advanced tool that allows us to store almost any Python object in a file firectory, with no to- or from-string conversion requirement on our part. It's like a super-general data formatting and parsing utility. To store a dictionary in a file, we pickle it directly:</p>
+                    <code>>>> d = {'apples': 42, 'bananas': 43, 'carrots': 44}
+                        >>> f = open('datafile.pkl', 'wb')
+                        >>> import pickle
+                        >>> pickle.dump(d, f) <span id="comment"># Pickle an object to file</span>
+                        >>> f.close()
+                    </code>
+                    <p>Then, to get the dictionary back later, we simple use <span class="inline-code">pickle</span> again to re-create it:</p>
+                    <code>>>> f = open('datafile.pkl', 'rb')
+                        >>> e = pickle.load(f) <span id="comment"># Load an object from file</span>
+                        >>> e
+                        {'apples': 42, 'bananas': 43, 'carrots': 44}
+                    </code>
+                    <p>We get back an equivalent dictionary object, with no manual splitting or converting required. The <span class="inline-code">pickle</span> module performs what is known as <em>object serialization</em>—converting objects to and from strings of bytes—but requires very little work on our part.</p>
+                    <p>Pickle internally translates our dictionary to a string form. Because <span class="inline-code">pickle</span> can reconstruct the object from this format, we don't have to deal with it ourselves.</p>
+                    <p><strong>Storing Python Objects in JSON Format</strong></p>
+                    <p><strong>JavaScript Object Notation</strong> is a lightweight data-interchange format that is easy for humans to read and write, as well as for machines to parse and generate.</p>
+                    <p>JSON is built on two structures:</p>
+                    <ul>
+                        <li>a collection of name/value pairs</li>
+                        <li>an ordered list of values</li>
+                    </ul>
+                    <p>JSON is a text format that is completely language independent but uses conventions that are familiar to many languages which makes JSON an ideal data-interchange language.</p>
+                    <p>JSON is so close to Python dictionaries and lists in syntax that translation to and from Python objects is trivial, and is automated by the <span class="inline-code">json</span> standard library module.</p>
+                    <p>A Python dictionary with nested structures is very similar to JSON data, though Python's variables and experessions support richer structuring options:</p>
+                    <code>>>> name = dict(first='Bob', last='Smith')
+                        >>> person = dict(name=name, job=['dev', 'po'], age=35)
+                        >>> person
+                        {'job': ['dev', 'po'], 'name': {'last': 'Doe', 'first': 'John'}, 'age': 35}
+                    </code>
+                    <p></p>
+                    <code>>>> import json
+                        >>> json.dumps(person)
+                        '{'job': ['dev', 'po'], 'name': {'last': 'Doe', 'first': 'John'}, 'age': 35}'
+                    </code>
+                    <code>>>> s = json.dumps(person)
+                        >>> s
+                        '{'job': ['dev', 'po'], 'name': {'last': 'Doe', 'first': 'John'}, 'age': 35}'
+                    </code>
+                    <code>>>> p = json.loads(s)
+                        >>> p
+                        {'job': ['dev', 'po'], 'name': {'last': 'Doe', 'first': 'John'}, 'age': 35}
+                        >>> p == person
+                        True
+                    </code>
+                    <p>It's straightforward to translate Python objects to and from JSON data strings in files. Prior to being stored in a file, your data is simply Python objects; the JSON module recreates them from the JSON textual representation when it loads it from the file:</p>
+                    <code>>>> json.dump(person, fp=open('testjson.txt', 'w'), indent=4
+                        >>> print(open('testjson.txt').read())
+                        {
+                            &nbsp;&nbsp;&nbsp;&nbsp;"job": [
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"dev",
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"po"],
+                            &nbsp;&nbsp;&nbsp;&nbsp;"name": {
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"last": "Doe",
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first": "John"
+                            },
+                            &nbsp;&nbsp;&nbsp;&nbsp;"age": 35
+                        }
+                        >>> p = json.load(open('testjson.txt'))
+                        >>> p
+                        {'job': ['dev', 'po'], 'name': {'last': 'Doe', 'first': 'John'}, 'age': 35}
+                    </code>
+                    <p>Once you've translated from JSON text, you process the data using normal Python object operations in your script.</p>
+                    <p>Note that strings are all Unicode in JSON to support text drawn from international character sets.</p>
                 </article>
             </section>
-            
-            <section class="main-section">
-                <header></header>
+            <!--------------Control Flow---------------->
+            <section class="main-section" id="control-flow">
+                <header>Control Flow</header>
+                <article>
+                    <p></p>
+                </article>
             </section>
             <section class="main-section">
                 <header></header>
